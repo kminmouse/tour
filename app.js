@@ -68,7 +68,7 @@ regionSelect.addEventListener("change", async (e) => {
 // 3. 한국관광공사 국문 관광정보 조회 API 호출 및 화면 렌더링
 async function fetchTourData(regionCode, regionName) {
   // arrange=O 를 사용하여 이미지가 있는 데이터를 우선적으로 가져옵니다.
-  const url = `https://apis.data.go.kr/B551011/KorService1/areaBasedList1?serviceKey=${TOUR_API_KEY}&numOfRows=12&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&listYN=Y&arrange=O&areaCode=${regionCode}`;
+  const url = `https://apis.data.go.kr/B551011/KorService2/areaBasedList1?serviceKey=${TOUR_API_KEY}&numOfRows=12&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&listYN=Y&arrange=O&areaCode=${regionCode}`;
 
   try {
     const response = await fetch(url);
