@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관광 명소 탐색기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>어디로 여행을 떠나볼까요? ✈️</h1>
+    <div class="select-wrapper">
+      <select id="regionSelect">
+        <option value="" disabled selected>지역을 선택하세요</option>
+        <option value="1">서울특별시</option>
+        <option value="2">인천광역시</option>
+        <option value="6">부산광역시</option>
+        <option value="31">경기도</option>
+        <option value="32">강원도</option>
+        <option value="39">제주도</option>
+      </select>
+    </div>
+
+    <!-- 관광정보 시각화 목록 뷰 (초기엔 숨김 처리) -->
+    <div id="listContainer" style="display: none;">
+      <h2 id="regionTitle"></h2>
+      <div id="tourList" class="tour-grid"></div>
+    </div>
+  </div>
+
+  <!-- Firebase 및 메인 로직 모듈 -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
